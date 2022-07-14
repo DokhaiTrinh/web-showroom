@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 const firebaseConfig = {
@@ -11,4 +10,7 @@ const firebaseConfig = {
   appId: "1:239906872890:web:de3ea67c98cae227ad1f03"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+export default app;
