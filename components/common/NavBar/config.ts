@@ -15,7 +15,7 @@ const navBarItemConfigs: NavItemConfig[] = [
     menuItems: [
       {
         title: "Về chúng tôi",
-        url: "/",
+        url: "/ve-chung-toi",
       },
     ],
   },

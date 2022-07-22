@@ -4,7 +4,7 @@ import navStyles from "styles/layout/NavBar.module.css";
 
 import { NavItemConfig } from "../config";
 
-function Dropdown(config: NavItemConfig) {
+function NavItem(config: NavItemConfig) {
   return (
     <div className={styles.dropdown}>
       <div className={navStyles.navItem}>{config.title}</div>
@@ -17,4 +17,4 @@ function Dropdown(config: NavItemConfig) {
   );
 }
 
-export default Dropdown;
+export default NavItem;

@@ -6,7 +6,7 @@ import messengerIcon from "assets/icons/messenger.svg";
 import zaloIcon from "assets/icons/zalo.svg";
 import Image from "next/image";
 import navBarItemConfigs from "./config";
-import Dropdown from "./Dropdown";
+import NavItem from "./NavItem";
 
 function NavBar() {
   return (
@@ -21,9 +21,8 @@ function NavBar() {
             />
           </a>
         </Link>
-
         {navBarItemConfigs.map((config) => (
-          <Dropdown
+          <NavItem
             key={config.title}
             menuItems={config.menuItems}
             title={config.title}
