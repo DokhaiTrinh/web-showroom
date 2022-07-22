@@ -12,13 +12,7 @@ function NavBar() {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
-        <Link
-          style={{
-            position: "relative",
-            display: "inline-block",
-          }}
-          href={"/"}
-        >
+        <Link href={"/"}>
           <a>
             <img
               src="https://niemtinvang.vn/wp-content/uploads/2019/02/FILE_20220108_160017_GOLDEN-TRUST-01-Copy.png"
