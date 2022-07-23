@@ -32,7 +32,7 @@ const Home: NextPage = () => {
     setIsFlipped4(isFlipped4);
   };
   return (
-    <PageContainer title="Home">
+    <PageContainer title="XÂY DỰNG NHÀ Ở TRỌN GÓI">
       <div className={styles.container}>
         <div className={styles.body}>
           <div className={styles.intro}>
