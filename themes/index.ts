@@ -1,14 +1,9 @@
-import { createTheme } from "@mui/material";
-import globalThemeConfig from "./config";
-
-const useCustomTheme = () => {
-  const theme = createTheme({
-    typography: {
-      fontFamily: globalThemeConfig.fontFamily,
-    },
-  });
-
-  return { theme };
+type GlobalThemeConfig = {
+  fontFamily: string;
 };
 
-export default useCustomTheme;
+const globalThemeConfig: GlobalThemeConfig = {
+  fontFamily: "Montserrat",
+};
+
+export default globalThemeConfig;
