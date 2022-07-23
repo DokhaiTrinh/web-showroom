@@ -2,9 +2,10 @@ import Link from "next/link";
 import React from "react";
 import styles from "styles/layout/NavBar.module.css";
 import fbIcon from "assets/icons/fb.svg";
-import messengerIcon from "assets/icons/messenger.svg";
-import zaloIcon from "assets/icons/zalo.svg";
+import { messengerIcon, zaloIcon } from "materials/icons";
 import Image from "next/image";
+import navBarItemConfigs from "./config";
+import NavItem from "./NavItem";
 
 function NavBar() {
   return (
@@ -19,19 +20,23 @@ function NavBar() {
             />
           </a>
         </Link>
-        <div className={styles.navItem}>Giới thiệu</div>
-        <div className={styles.navItem}>Dịch vụ</div>
-        <div className={styles.navItem}>Thư viện</div>
-        <div className={styles.navItem}>Báo giá</div>
-        <div className={styles.navItem}>Liên hệ</div>
+        {navBarItemConfigs.map((config) => (
+          <NavItem
+            key={config.type}
+            menuItems={config.menuItems}
+            title={config.title}
+            url={config.url}
+          />
+        ))}
+
         <div className="w-24"></div>
-        <a href="/">
+        <a target="_blank" href="https://www.facebook.com/niemtinvang.vn/">
           <Image width={34} src={fbIcon} />
         </a>
-        <a href="/">
+        <a target="_blank" href="https://www.messenger.com/t/308993706943625">
           <Image width={34} src={messengerIcon} />
         </a>
-        <a href="/">
+        <a target="_blank" href="https://zalo.me/0989642652">
           <Image width={34} src={zaloIcon} />
         </a>
       </div>
