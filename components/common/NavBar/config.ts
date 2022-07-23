@@ -36,7 +36,24 @@ const navBarItemConfigs: NavItemConfig[] = [
   {
     type: NavMenu.services,
     title: "Dịch vụ",
-    menuItems: [],
+    menuItems: [
+      {
+        title: "Thiết kế nhà đẹp",
+        url: "/du-an/thiet-ke-nha-dep",
+      },
+      {
+        title: "Nội thất lung linh",
+        url: "/du-an/noi-that-lung-linh",
+      },
+      {
+        title: "Thi công xây dựng",
+        url: "/du-an/thi-cong-xay-dung",
+      },
+      {
+        title: "Cải tạo & sữa chữa nhà",
+        url: "/du-an/cai-tao-sua-chua-nha",
+      },
+    ],
   },
   {
     type: NavMenu.library,
