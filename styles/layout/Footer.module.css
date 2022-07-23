@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--color-grey);
+    padding-bottom: 3em;
+}
+
+.logo{
+    width: 250px;
+    padding-right: 3em;
+    margin-top: 2em;
+}
+
+.info{
+    height: 2em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.name{
+    color: var(--color-primary);
+}
+
+.title{
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+.link{
+    color: var(--color-primary);
+}
