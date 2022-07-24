@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container .input {
+  border: none;
+  border-radius: 3px;
+  background-color: #e8ebe9;
+  padding: 10px;
+  outline: none;
+  margin-right: 10px;
+  width: 100%;
+
+}
+
+.container .actionButton {
+  border: none;
+  background: none;
+  color: var(--color-primary);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .actionButton:hover {
+  opacity: 0.5;
+}

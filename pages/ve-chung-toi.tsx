@@ -1,19 +1,12 @@
 import React from "react";
 import styles from '../styles/AboutUs.module.css';
 import Link from "next/link";
-
+import Header from "components/common/Header";
 function About() {
   return (
     <div className={styles.container}>
       <div className={styles.body}>
-        <div className={styles.intro}>
-          <div className={styles.box}>NIỀM TIN VÀNG</div>
-          <div>
-            <h2>6+ kinh nghiệm thiết kế &</h2>
-            <h2>xây dựng công trình</h2>
-          </div>
-          <div className={styles.box}>THIẾT KẾ NHÀ ĐẸP</div>
-        </div>
+        <Header/>
         <hr className={styles.divider} />
         <h2 className={styles.h}>CÔNG TY TNHH XÂY DỰNG NIỀM TIN VÀNG</h2>
         <div className={styles.line}>
@@ -57,7 +50,7 @@ function About() {
         <hr className={styles.divider} />
         <div className={styles.space}></div>
         <div className={styles.space}></div>
-        <iframe src="https://onedrive.live.com/embed?resid=F0833C89E6A7849C%21197585&amp;authkey=%21AJ-SoJNGajPIn0I&amp;em=2" width="100%" height="600px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> PDF, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <iframe src="https://onedrive.live.com/embed?resid=F0833C89E6A7849C%21197585&amp;authkey=%21AJ-SoJNGajPIn0I&amp;em=2" width="100%" height="600px">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> PDF, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
         <div className={styles.space}></div>
       </div>
     </div>
