@@ -8,6 +8,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
+input {
+  font-family: 'Montserrat';
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -19,4 +23,21 @@ a {
 
 .w-24 {
   width: 24px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
