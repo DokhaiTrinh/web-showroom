@@ -1,3 +1,4 @@
+import LoginModal from "components/authentication/LoginModal";
 import React, { ReactNode } from "react";
 import ChatBox from "./ChatBox";
 import Footer from "./Footer";
@@ -12,6 +13,7 @@ function Layout({ children }: Props) {
     <div>
       <NavBar />
       <ChatBox />
+      <LoginModal />
       {children}
       <Footer />
     </div>
