@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Footer from "./Footer";
-import NavBar from "./NavBar/index";
+import NavBar from "./NavBar";
 
 type Props = {
   children: ReactNode;
