@@ -8,7 +8,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
-input {
+input,
+button {
   font-family: 'Montserrat';
 }
 
@@ -40,4 +41,12 @@ a {
 
 .justify-content-center {
   justify-content: center;
+}
+
+.h-16px {
+  height: 16px;
+}
+
+.h-24px {
+  height: 24px;
 }
