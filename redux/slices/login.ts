@@ -1,21 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type InitialState = {
+export type LoginState = {
   username?: string;
   password?: string;
   loading: boolean;
-}
+};
 
-const initialState: InitialState = {
-  loading: false
-}
+const initialState: LoginState = {
+  loading: false,
+};
 
 const slice = createSlice({
-  name: 'login',
+  name: "login",
   initialState: initialState,
   reducers: {
-    login: (state, action) => {}
-  }
+    login: (state, action) => {},
+  },
 });
 
 const { actions, reducer } = slice;

@@ -1,0 +1,8 @@
+.container {
+  border: none;
+  outline: none;
+  background-color: var(--color-grey-light);
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
