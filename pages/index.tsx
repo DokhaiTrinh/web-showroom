@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import PageContainer from "../components/containers/PageContainer";
 import styles from "../styles/Home.module.css";
-
+import Header from "components/common/Header";
 import { useState } from "react";
 const Home: NextPage = () => {
   console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
@@ -35,14 +35,7 @@ const Home: NextPage = () => {
     <PageContainer title="XÂY DỰNG NHÀ Ở TRỌN GÓI">
       <div className={styles.container}>
         <div className={styles.body}>
-          <div className={styles.intro}>
-            <div className={styles.box}>NIỀM TIN VÀNG</div>
-            <div>
-              <h2>6+ kinh nghiệm thiết kế &</h2>
-              <h2>xây dựng công trình</h2>
-            </div>
-            <div className={styles.box}>THIẾT KẾ NHÀ ĐẸP</div>
-          </div>
+          <Header/>
           <div className={styles.service}>
             <h1 className={styles.category}>THIẾT KẾ NHÀ ĐẸP</h1>
             <hr className={styles.divider} />
