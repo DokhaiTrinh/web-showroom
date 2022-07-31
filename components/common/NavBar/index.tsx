@@ -9,13 +9,17 @@ import NavItem from "./NavItem";
 import Button, { ButtonVariant } from "../Button";
 import globalThemeConfig from "themes";
 import { useDispatch } from "react-redux";
-import { toggleShowLoginModal } from "redux/slices/global";
+import { toggleShowLoginModal, toggleShowRegisterModal } from "redux/slices/global";
 
 function NavBar() {
   const dispatch = useDispatch();
 
   const onLogin = () => {
     dispatch(toggleShowLoginModal(true));
+  };
+  
+  const onRegister = () => {
+    dispatch(toggleShowRegisterModal(true));
   };
 
   return (
@@ -69,6 +73,7 @@ function NavBar() {
           borderRadius={5}
           height={40}
           width={130}
+          onClick={onRegister}
         />
       </div>
     </div>
