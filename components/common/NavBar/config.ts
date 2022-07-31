@@ -16,6 +16,7 @@ export enum NavMenu {
   library,
   pricing,
   contact,
+  project
 }
 
 const navBarItemConfigs: NavItemConfig[] = [
@@ -71,6 +72,12 @@ const navBarItemConfigs: NavItemConfig[] = [
     title: "Liên hệ",
     menuItems: [],
     url: "/lien-he",
+  },
+  {
+    type: NavMenu.project,
+    title: "Dự án của tôi",
+    menuItems: [],
+    url: "/du-an",
   },
 ];
 export default navBarItemConfigs;
