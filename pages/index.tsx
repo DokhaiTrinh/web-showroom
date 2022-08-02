@@ -35,7 +35,7 @@ const Home: NextPage = () => {
     <PageContainer title="XÂY DỰNG NHÀ Ở TRỌN GÓI">
       <div className={styles.container}>
         <div className={styles.body}>
-          <Header/>
+          <Header />
           <div className={styles.service}>
             <h1 className={styles.category}>THIẾT KẾ NHÀ ĐẸP</h1>
             <hr className={styles.divider} />

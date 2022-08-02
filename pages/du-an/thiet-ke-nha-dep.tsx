@@ -1,11 +1,35 @@
 import React from "react";
 import styles from "../../styles/Service.module.css";
+import { getPostByCategoryApi } from "../../apis/Post/getPost";
+
 function BeautyHomeDesign() {
+  const [postByCate, setPostByCate] = React.useState([]);
+
+  React.useEffect(() => {
+    (async () => {
+      try {
+        const listAllProduct = await getPostByCategoryApi(
+          14,
+          "BY_POST_CATEGORY_ID",
+          0,
+          15,
+          "createdAt",
+          false
+        );
+        setPostByCate(listAllProduct.data);
+      } catch (error) {
+        console.log("Không thể lấy danh sách sản phẩm");
+      }
+    })();
+  }, []);
+  console.log(postByCate);
+
   return (
     <div className={styles.container}>
       <div className={styles.body}>
         <div className={styles.service}>
           <div className={styles.stall}>
+            (postByCate ? ( postByCate.map((row, index) => (
             <div className={styles.item}>
               <img
                 className={styles.img}
@@ -66,6 +90,8 @@ function BeautyHomeDesign() {
                 </div>
               </div>
             </div>
+            )) ) : (<div>dasdasd</div>
+            )) ;
           </div>
         </div>
       </div>
